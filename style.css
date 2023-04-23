@@ -4,46 +4,59 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header-image-wrapper {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header-image-wrapper img {
   width: 100%;
 }
+
 .header-image-wrapper .more_inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header-image-wrapper { text-align: center;
+
+  .header-image-wrapper { 
+    text-align: center;
+  }
+
 }
-}
+
 .to-do-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .to-do-item {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .item-wrapper {
   display: flex;
 }
+
 .to-do-items {
   margin:0;
   padding: 0px;
 }
+
 .to-do-items__lst-item, .to-do-items-hdr {
   list-style:none;
 }
+
 .text-input, btn {
   outline:none;
 }
+
 .btn {
   background: none;
   border: 0px;
@@ -53,9 +66,11 @@ body {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .btn:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .to-do-items-hdr,
 .add-item__label {
@@ -67,6 +82,7 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+
 .text-input {
   margin: 0;
   font-size: 18px;
@@ -79,6 +95,7 @@ body {
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .text-input:focus {
   color: #333;
 }
@@ -88,6 +105,7 @@ body {
   display: block;
   margin: 0 0 20px;
 }
+
 #add-item__input {
   width: 318px;
 }
@@ -97,11 +115,11 @@ body {
   overflow: hidden; 
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .to-do-items__lst-item > * {
   vertical-align: middle;
 }
@@ -109,12 +127,14 @@ body {
 .to-do-items__lst-item li > input[type="checkbox"] {
   margin: 0 10px;
 }
+
 .to-do-items__lst-item > label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .to-do-items__lst-item >    input[type="text"] {
   width: 226px
 }
@@ -123,6 +143,7 @@ body {
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .to-do-item__btn-delete img:hover {
   transform: rotateZ(0);
 }
