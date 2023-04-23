@@ -45,16 +45,16 @@ body {
 }
 
 .to-do-items {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .to-do-items__lst-item, .to-do-items-hdr {
-  list-style:none;
+  list-style: none;
 }
 
 .text-input, btn {
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -156,14 +156,14 @@ body {
 
 /* Edit Task */
 .to-do-items__lst-item input[type=text] {
-  display:none
+  display: none
 }
 
 .to-do-items__lst-item_edit input[type=text] {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .to-do-items__lst-item_edit label {
-  display:none;
+  display: none;
 }
