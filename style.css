@@ -49,11 +49,13 @@ body {
   padding: 0px;
 }
 
-.to-do-items__lst-item, .to-do-items-hdr {
+.to-do-items__lst-item,
+.to-do-items-hdr {
   list-style: none;
 }
 
-.text-input, btn {
+.text-input, 
+.btn {
   outline: none;
 }
 
