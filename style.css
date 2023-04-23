@@ -118,12 +118,12 @@ li > label {
 li >    input[type="text"] {
   width: 226px
 }
-button.to-do-item__button-delete img {
+button.to-do-item__btn-delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.to-do-item__button-delete img:hover {
+button.to-do-item__btn-delete img:hover {
   transform: rotateZ(0);
 }
 
