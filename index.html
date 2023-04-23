@@ -15,37 +15,37 @@
     </div>
     <div class='to-do-list'>
       <p id='add-item'>
-        <label for='add-item__input'>Add Item</label>
+        <label for='add-item__input' class="add-item__label">Add Item</label>
         <div class='item-wrapper'>
-          <input id='add-item__input' class='to-do-item' type='text'>
-          <button>Add</button>
+          <input id='add-item__input' class='text-input to-do-item' type='text'>
+          <button class="btn">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
-      <ul id='to-do-items'>
-        <li>
+      <h3 class="to-do-items-hdr">Todo</h3>
+      <ul id = 'incomplete-tasks-lst-id' class='to-do-items'>
+        <li class='to-do-items__lst-item'>
           <input type='checkbox'>
           <label class="to-do-item">Pay Bills</label>
-          <input type='text' class="to-do-item">
-          <button class='to-do-item__btn-edit-save'>Edit</button>
-          <button class='to-do-item__btn-delete'><img src='./remove.svg'></button>
+          <input type='text' class="text-input to-do-item to-do-item__input">
+          <button class='btn to-do-item__btn-edit-save'>Edit</button>
+          <button class='btn to-do-item__btn-delete'><img src='./remove.svg'></button>
         </li>
-        <li class='to-do-item_edit'>
+        <li class='to-do-items__lst-item to-do-items__lst-item_edit'>
           <input type='checkbox'>
             <label class="to-do-item">Go Shopping</label>
-            <input type='text' value='Go Shopping' class="to-do-item">
-            <button class='to-do-item__btn-edit-save'>Save</button>
-            <button class='to-do-item__btn-delete'><img src='./remove.svg'></button>
+            <input type='text' value='Go Shopping' class="text-input to-do-item to-do-item__input">
+            <button class='btn to-do-item__btn-edit-save'>Save</button>
+            <button class='btn to-do-item__btn-delete'><img src='./remove.svg'></button>
         </li>
       </ul>
-      <h3>Completed</h3>
-      <ul id='completed-items'>
-        <li>
+      <h3 class="to-do-items-hdr">Completed</h3>
+      <ul id = 'completed-tasks-lst-id' class='to-do-items to-do-items_completed'>
+        <li class='to-do-items__lst-item'>
           <input type='checkbox' checked>
           <label class='to-do-item'>See the Doctor</label>
-          <input type='text' class='to-do-item'>
-          <button class='to-do-item__btn-edit-save'>Edit</button>
-          <button class='to-do-item__btn-delete'><img src='./remove.svg'></button>
+          <input type='text' class='text-input to-do-item to-do-item__input'>
+          <button class='btn to-do-item__btn-edit-save'>Edit</button>
+          <button class='btn to-do-item__btn-delete'><img src='./remove.svg'></button>
         </li>
       </ul>
     </div>

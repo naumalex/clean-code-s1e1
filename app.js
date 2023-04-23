@@ -10,8 +10,8 @@
 
 var taskInput=document.getElementById("add-item__input");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("to-do-items");//ul of #incomplete-tasks
-var completedTasksHolder=document.getElementById("completed-items");//completed-tasks
+var incompleteTaskHolder=document.getElementById("incomplete-tasks-lst-id");//ul of #incomplete-tasks
+var completedTasksHolder=document.getElementById("completed-tasks-lst-id");//completed-tasks
 
 
 //New task list item
@@ -32,18 +32,20 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
+    listItem.className='to-do-items__lst-item';
+
     label.innerText=taskString;
     label.className='to-do-item';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="to-do-item";
+    editInput.className="text-input to-do-item to-do-item__input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="to-do-item__btn-edit-save";
+    editButton.className=" btn to-do-item__btn-edit-save";
 
-    deleteButton.className="to-do-item__btn-delete";
+    deleteButton.className="btn to-do-item__btn-delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -85,7 +87,7 @@ var editTask=function(){
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".to-do-item__btn-edit-save");
-    var containsClass=listItem.classList.contains("to-do-item_edit");
+    var containsClass=listItem.classList.contains("to-do-items__lst-item_edit");
     //If class of the parent is .edit-mode
     if(containsClass){
 
@@ -98,8 +100,8 @@ var editTask=function(){
         editBtn.innerText="Save";
     }
 
-    //toggle .edit-mode on the parent.
-    listItem.classList.toggle("to-do-item_edit");
+    //toggle .to-do-item_edit on the parent.
+    listItem.classList.toggle("to-do-items__lst-item_edit");
 };
 
 
