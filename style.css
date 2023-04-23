@@ -136,7 +136,7 @@ body {
 }
 
 .to-do-items__lst-item >    input[type="text"] {
-  width: 226px
+  width: 226px;
 }
 .to-do-item__btn-delete img {
   height: 2em;
@@ -150,18 +150,18 @@ body {
 
 /* Completed */
 .to-do-items_completed label {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .to-do-items__lst-item input[type=text] {
-  display: none
+  display: none;
 }
 
 .to-do-items__lst-item_edit input[type=text] {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .to-do-items__lst-item_edit label {
