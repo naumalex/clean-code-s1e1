@@ -35,14 +35,14 @@
   display: flex;
 }
 .to-do-lst__items-lst {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .to-do-lst__item-cntr, .to-do-lst__items-lst-hdr {
-  list-style:none;
+  list-style: none;
 }
 .text-inp, .checkbox, .btn{
-  outline:none;
+  outline: none;
 }
 .btn {
   background: none;
@@ -134,14 +134,14 @@
 
 /* Edit Task */
 .to-do-lst__item-cntr .text-inp {
-  display:none
+  display: none
 }
 
 .to-do-lst__incomplete-itm--edit-mode .text-inp {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .to-do-lst__incomplete-itm--edit-mode .lbl {
-  display:none;
+  display: none;
 }
