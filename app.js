@@ -10,8 +10,8 @@
 
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("to-do-list-incomplete-tasks");//ul of #to-do-list-incomplete-tasks
-var completedTasksHolder=document.getElementById("to-do-list-completed-tasks");//completed-tasks
+var incompleteTaskHolder=document.getElementById("to-do-lst-incomplete-tasks");//ul of #to-do-list-incomplete-tasks
+var completedTasksHolder=document.getElementById("to-do-lst-completed-tasks");//completed-tasks
 
 
 //New task list item
@@ -33,17 +33,17 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.className='to-do-list__item';
+    label.className='to-do-lst__itm';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="to-do-list__item";
+    editInput.className="to-do-lst__itm";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="button-edit-save";
+    editButton.className="btn-edit-save";
 
-    deleteButton.className="button-delete";
+    deleteButton.className="btn-delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -84,12 +84,12 @@ var editTask=function(){
 
     var editInput=listItem.querySelector('input[type=text]');
     var label=listItem.querySelector("label");
-    var editBtn=listItem.querySelector(".button-edit-save");
-    var containsClass=listItem.classList.contains("to-do-list__incomplete-item--edit-mode");
-    //If class of the parent is .to-do-list__incomplete-item--edit-mode
+    var editBtn=listItem.querySelector(".btn-edit-save");
+    var containsClass=listItem.classList.contains("to-do-lst__incomplete-itm--edit-mode");
+    //If class of the parent is .to-do-lst__incomplete-itm--edit-mode
     if(containsClass){
 
-        //switch to .to-do-list__incomplete-item--edit-mode
+        //switch to .to-do-lst__incomplete-itm--edit-mode
         //label becomes the inputs value.
         label.innerText=editInput.value;
         editBtn.innerText="Edit";
@@ -99,7 +99,7 @@ var editTask=function(){
     }
 
     //toggle .editmode on the parent.
-    listItem.classList.toggle("to-do-list__incomplete-item--edit-mode");
+    listItem.classList.toggle("to-do-lst__incomplete-itm--edit-mode");
 };
 
 
@@ -156,8 +156,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector("input[type=checkbox]");
-    var editButton=taskListItem.querySelector("button.button-edit-save");
-    var deleteButton=taskListItem.querySelector("button.button-delete");
+    var editButton=taskListItem.querySelector("button.btn-edit-save");
+    var deleteButton=taskListItem.querySelector("button.btn-delete");
 
 
     //Bind editTask to edit button.
