@@ -19,7 +19,7 @@
 
 @media (max-width:768px) {
   .header { text-align: center;
-}
+  }
 }
 .to-do-lst {
   display: block;
