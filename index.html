@@ -7,48 +7,52 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 <body class="page">
-  <div class="header">
+  <header class="header">
     <img src="./eisenhower-matrix.jpg" class="header__image">
     <a class="header__more-info-link" href="https://goal-life.com/page/method/matrix-eisenhower">
       Want more details?
     </a>
-  </div>
-  <div class="to-do-lst">
-    <div id="to-do-lst-add-itm-cntr">
+</header>
+  <main class="to-do-lst">
+    <section id="to-do-lst-add-itm-cntr">
       <label for="new-task" class="lbl to-do-lst__add-itm-lbl">Add Item</label>
       <div class="to-do-lst__add-itm-cntr">
         <input id="new-task"class="text-inp to-do-lst__itm" type="text">
         <button class="btn">Add</button>
       </div>
-    </div>
-    <h3 class="to-do-lst__items-lst-hdr">Todo</h3>
-    <ul id="to-do-lst-incomplete-tasks" class="to-do-lst__items-lst">
-      <li class="to-do-lst__item-cntr">
-        <input type="checkbox" class="checkbox">
-        <label class="lbl to-do-lst__itm">Pay Bills</label>
-        <input type="text" class="text-inp to-do-lst__itm">
-        <button class="btn btn-edit-save">Edit</button>
-        <button class="btn btn-delete"><img src="./remove.svg" class="btn-delete__image"></button>
-      </li>
-      <li class="to-do-lst__item-cntr to-do-lst__incomplete-itm--edit-mode">
-        <input type="checkbox" class="checkbox">
-        <label class="lbl to-do-lst__itm">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="text-inp to-do-lst__itm">
-        <button class="btn btn-edit-save">Save</button>
-        <button class="btn btn-delete"><img src="./remove.svg" class="btn-delete__image"></button>
-      </li>
-    </ul>
-    <h3>Completed</h3>
-    <ul id="to-do-lst-completed-tasks" class="to-do-lst__items-lst">
-      <li class="to-do-lst__item-cntr">
-        <input type="checkbox" checked class="checkbox">
-        <label class="lbl to-do-lst__itm">See the Doctor</label>
-        <input type="text" class="text-inp to-do-lst__itm">
-        <button class="btn btn-edit-save">Edit</button>
-        <button class="btn btn-delete"><img src="./remove.svg" class="btn-delete__image"></button>
-      </li>
-    </ul>
-  </div>
+    </section>
+    <section>
+      <h3 class="to-do-lst__items-lst-hdr">Todo</h3>
+      <ul id="to-do-lst-incomplete-tasks" class="to-do-lst__items-lst">
+        <li class="to-do-lst__item-cntr">
+          <input type="checkbox" class="checkbox">
+          <label class="lbl to-do-lst__itm">Pay Bills</label>
+          <input type="text" class="text-inp to-do-lst__itm">
+          <button class="btn btn-edit-save">Edit</button>
+          <button class="btn btn-delete"><img src="./remove.svg" class="btn-delete__image"></button>
+        </li>
+        <li class="to-do-lst__item-cntr to-do-lst__incomplete-itm--edit-mode">
+          <input type="checkbox" class="checkbox">
+          <label class="lbl to-do-lst__itm">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="text-inp to-do-lst__itm">
+          <button class="btn btn-edit-save">Save</button>
+          <button class="btn btn-delete"><img src="./remove.svg" class="btn-delete__image"></button>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h3>Completed</h3>
+      <ul id="to-do-lst-completed-tasks" class="to-do-lst__items-lst">
+        <li class="to-do-lst__item-cntr">
+          <input type="checkbox" checked class="checkbox">
+          <label class="lbl to-do-lst__itm">See the Doctor</label>
+          <input type="text" class="text-inp to-do-lst__itm">
+          <button class="btn btn-edit-save">Edit</button>
+          <button class="btn btn-delete"><img src="./remove.svg" class="btn-delete__image"></button>
+        </li>
+      </ul>
+    </section>
+</main>
   <script src="app.js"></script>
   </body>
 </html>
