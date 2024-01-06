@@ -17,6 +17,7 @@
 }
 
 .header .header__more-info-link {
+
   font-family: fantasy, cursive;
 }
 
@@ -52,6 +53,7 @@
 
 .text-inp, 
 .checkbox, 
+
 .btn {
   outline: none;
 }
@@ -69,9 +71,12 @@
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .to-do-lst__items-lst-hdr,
 .to-do-lst__add-itm-lbl {
+
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -81,42 +86,53 @@
   text-transform: uppercase;
 }
 
+
 .text-inp {
+
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
   padding: 0 9px;
+
   border: 1px solid #ddd;
   background: #fff;
+
   border-radius: 6px;
   font-family: Lato, sans-serif;
   color: #888;
 }
 
 .text-inp:focus {
+
   color: #333;
 }
 
 /* New Task */
+
 .to-do-lst__add-itm-lbl {
+
   display: block;
   margin: 0 0 20px;
 }
 
+
 #new-task {
+
   width: 318px;
 }
 
 /* Task list */
 .to-do-lst__item-cntr {
   overflow: hidden;
+
   padding: 20px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 
 .to-do-lst__item-cntr > * {
   vertical-align: middle;
@@ -133,6 +149,7 @@
   width: 226px;
 }
 
+
 .to-do-lst__item-cntr > .text-inp {
   width: 226px;
 }
@@ -142,6 +159,7 @@
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 
 .btn-delete__image:hover {
   transform: rotateZ(0);
