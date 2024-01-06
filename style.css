@@ -31,7 +31,7 @@ body {
   display: inline-block;
   flex-grow: 1
 }
-.to-do-list__add-task-wrapper {
+.to-do-list__add-item-container {
   display: flex;
 }
 ul {
@@ -127,7 +127,7 @@ button.button-delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
+ul#to-do-list-completed-tasks label {
   text-decoration: line-through
   color: #888;
 }
